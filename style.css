@@ -134,6 +134,65 @@ body {
   letter-spacing: 3rem;
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.images-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.images-gallery {
+  margin: 3rem;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  height: 20rem;
+  -webkit-box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline-offset: 1rem;
+}
+
+.image:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+  outline: 1rem solid #00b0ff;
+  z-index: 2;
+}
+
+.images-gallery:hover .image:not(:hover) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.image-flowers {
+  top: 10rem;
+  left: 15%;
+}
+
+.image-leaves {
+  top: 2rem;
+  right: 0;
+}
+
+.image-snow {
+  top: -2rem;
+  left: 0;
+}
+
 .container {
   width: 80vw;
   margin: 2rem auto;
