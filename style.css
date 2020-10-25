@@ -84,6 +84,56 @@ body {
   /*active state is when button is pressed*/
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.apple {
+  height: 20rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.apple:hover {
+  border-radius: 0;
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.text-effect {
+  background-image: url(./Media/clouds.jpg);
+  background-position: center;
+  color: transparent;
+  font-size: 8rem;
+  -webkit-background-clip: text;
+  /*background clip doesn't work on Chrome*/
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.text-effect:hover {
+  -webkit-transform: skewY(-10deg);
+          transform: skewY(-10deg);
+  letter-spacing: 3rem;
+}
+
 .container {
   width: 80vw;
   margin: 2rem auto;
