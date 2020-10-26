@@ -1,0 +1,50 @@
+@import "_variables";
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 2rem;
+  margin: 3rem auto;
+  font-size: 3rem;
+  border-radius: 5rem;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn-orange {
+  color: color(white);
+  background-color: color(orange);
+}
+
+.btn-orange::after {
+  background-color: color(orange);
+  color: color(white);
+}
+
+.btn:hover {
+  transform: rotate(360deg);
+}
+
+.btn:active {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn:active::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  opacity: 0;
+}
