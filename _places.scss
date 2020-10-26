@@ -1,0 +1,32 @@
+@import "_variables";
+
+.places-parent {
+  width: 90rem;
+  height: 40rem;
+  position: relative;
+  margin: 2rem;
+}
+
+.places {
+  height: 30rem;
+  position: absolute;
+  transition: all 0.4s;
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.places-forest {
+  left: 0%;
+}
+
+.places-mines {
+  right: 0%;
+}
+
+.places:hover {
+  transform: scale(1.2);
+}
+
+.places-parent:hover .places:not(:hover) {
+  transform: scale(0.7);
+  filter: blur(0.5rem);
+}
