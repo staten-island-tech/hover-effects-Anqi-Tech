@@ -8,9 +8,12 @@ body {
 
 $colors: (
   orange: rgb(255, 142, 36),
+  orange-light: rgb(253, 230, 128),
   white: #fff,
   black: #000,
   yellow: rgb(255, 255, 77),
+  blue: rgb(0, 98, 255),
+  blue-light: rgb(83, 201, 255),
 );
 
 @function color($color-name) {

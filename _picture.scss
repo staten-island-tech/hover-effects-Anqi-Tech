@@ -1,7 +1,7 @@
 @import "_variables";
 
-.potato {
-  height: 50rem;
+.picture-parent {
+  height: 25rem;
   width: 25rem;
   display: flex;
   flex-direction: column;
@@ -9,13 +9,13 @@
 }
 
 .picture-potato {
-  height: 50%;
+  height: 25rem;
   clip-path: polygon(50% 25%, 80% 10%, 100% 50%, 50% 100%, 0 50%, 20% 10%);
   transition: all 1s;
 }
 
 .picture-red {
-  height: 50%;
+  height: 25rem;
   clip-path: polygon(
     20% 0%,
     0% 20%,
@@ -38,11 +38,11 @@
   left: 50%;
 }
 
-.potato:hover .picture-potato {
+.picture-parent:hover .picture-potato {
   filter: hue-rotate(270deg);
 }
 
-.potato:hover .picture-red {
+.picture-parent:hover .picture-red {
   opacity: 1;
-  top: 25%;
+  top: 50%;
 }
