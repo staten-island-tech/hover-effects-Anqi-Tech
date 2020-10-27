@@ -1,0 +1,25 @@
+@import "_variables";
+
+.daucus {
+  height: 5rem;
+  width: 50rem;
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  background-color: color(orange);
+  border-radius: 5rem;
+  color: color(yellow);
+  transition: all 0.5s;
+}
+
+.daucus:hover {
+  border-radius: 0;
+  transform: scale(2);
+}
+
+.daucus:active {
+  transform: skewY(30deg);
+  color: color(black);
+  background-color: color(red);
+}

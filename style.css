@@ -27,16 +27,8 @@ body {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
-}
-
-.btn-orange {
   color: #fff;
   background-color: #ff8e24;
-}
-
-.btn-orange::after {
-  background-color: #ff8e24;
-  color: #fff;
 }
 
 .btn:hover {
@@ -61,6 +53,8 @@ body {
   z-index: -1;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  background-color: #ff8e24;
+  color: #fff;
 }
 
 .btn:active::after {
@@ -199,12 +193,12 @@ body {
   text-decoration: none;
   background-color: #0062ff;
   color: #53c9ff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .arrow-left {
-  padding: 6rem;
+  padding: 5rem;
   -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
           clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
 }
@@ -218,6 +212,42 @@ body {
 .arrow:hover {
   background-color: #ff8e24;
   color: #fde680;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.daucus {
+  height: 5rem;
+  width: 50rem;
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  background-color: #ff8e24;
+  border-radius: 5rem;
+  color: #ffff4d;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.daucus:hover {
+  border-radius: 0;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.daucus:active {
+  -webkit-transform: skewY(30deg);
+          transform: skewY(30deg);
+  color: #000;
+  background-color: #900000;
 }
 
 .container {
