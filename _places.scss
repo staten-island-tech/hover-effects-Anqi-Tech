@@ -30,3 +30,8 @@
   transform: scale(0.7);
   filter: blur(0.5rem);
 }
+
+.places:active {
+  transform: rotateX(90deg);
+  transition: all 0.2s;
+}
